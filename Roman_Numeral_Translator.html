@@ -1,0 +1,73 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN">
+<!--This is an HTML Multi line comment. Try writing your own and write a few words on what this page is, what id does and who wrote it-->
+
+<HTML>
+<HEAD>
+   <meta http-equiv="Content-type" content="text/html;charset=UTF-8">
+   <TITLE>Roman Numeral Translaror</TITLE>
+   <style type="text/css">
+ 	    BODY 		{background-color: #996600; }   
+       .main_screen{background-color: #965513; 
+      			 	width: 400px; 
+      			 	font-family: Copperplate, 'Copperplate Gothic Light', fantasy;
+					font-size: 20px;
+					font-style: normal;
+					font-variant: normal;
+					font-weight: bold  ;
+					line-height: 10px;
+      			 	text-align: center;
+      				vertical-align: middle;
+      			    }
+       .title 	   {height: 100px; 
+      		        padding-top:40px;
+      		       }
+       .section    {font-weight: normal;
+      	     	  	height: 100px;
+      	     		font-size: 17px
+      	     	   }
+       	.footnote  {font-family:   monospace;
+					font-size: 15px;
+					font-style: normal;
+					font-variant: normal;
+					font-weight: 400;
+					line-height: 10px;
+					}     
+ 	 </style>
+ 	 <script>
+		function myFunction() {
+			//Two backslashes make a single line Javascript comment. Write a description of what this function does in your own comment:
+
+
+ 			  x =  document.getElementsByName('textbox_1')[0].value;
+ 			//Check out this URL for more on if/else/else http://www.w3schools.com/js/js_if_else.asp
+ 			//Check out this URL for more on isNaN, a function that determines if a value is a number or is Not a Number (that's what NAN stands for: http://www.w3schools.com/jsref/jsref_isnan.asp)
+
+ 			//Try changing this from just checking for 1 thru 4000 to also making sure it's a number, and changing the ALERT box to give a better warning about why they are having a problem
+
+ 			  if (x>=4000 || x<=1)
+ 			  {alert(x +  " is not a number between 1 and 4,000");}
+			}
+	</script>
+</HEAD>
+<BODY> 
+<br>
+<br>
+<br>
+<br>
+	<center>
+		<div class="main_screen" bgcolor = '#965513'>  
+			<div class="title">Roman Numeral Translator</div>
+	 			<div class="section">
+	 					    Insert Number: <input type="text" name="textbox_1">
+	 					    <br> 
+						    <input type="submit" value="Translate"  onClick="myFunction()">
+				</div>
+			<div class="section" style="height:253px">  </div>
+			<div class="footnote" style="hight:7px">
+			*Only enter a number between 1 and 4,000 </div>
+
+		</div>
+ 	</center>
+
+</BODY>
+</HTML>
